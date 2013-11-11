@@ -1,0 +1,42 @@
+body {
+	background-image: url(../img/clouds.jpg);
+
+	animation:fondo 30s linear infinite;
+}
+
+@keyframes fondo{
+	from{background-position: 1440px 0px;}
+	to{background-position: 0px 0px;}
+}
+
+.frente{
+	position: absolute;
+	bottom: 48;
+	left: auto;
+	right: auto;
+	z-index: 10;
+
+	animation:sonic 2s alternate infinite;
+}
+
+@keyframes sonic{
+	from{left: 0;}
+	to{left: 5%;}
+}
+
+.piso{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 48px;
+	background-image: url(../img/piso.jpg);
+	background-repeat: repeat-x;
+
+	animation:piso 6.56s ease infinite;
+}
+
+@keyframes piso{
+	from{background-position: 1440px 0px;}
+	to{background-position: 0px 0px;}
+}
